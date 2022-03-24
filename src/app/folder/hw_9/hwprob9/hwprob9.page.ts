@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Hwprob9Page implements OnInit {
 
-  constructor() { }
 
+  message;
+
+  constructor() { }
+  
   ngOnInit() {
+
+let mile=Number(prompt('Type number of miles'))
+let gallons=Number(prompt('Type amount of gallons of gas used'))
+
+this.message =(mile/gallons)
+
   }
 
 }
